@@ -1,0 +1,36 @@
+.anime {
+  color: #fff;
+  background: linear-gradient(to right, #b44201 50%, #fff 50%);
+  background-size: 200% 100%;
+  transition: all 1s;
+  /* width: 15.3125rem;
+  height: 4rem;
+  text-transform: uppercase;
+  cursor: pointer; */
+}
+
+.anime:hover {
+  background-position: -100% 0;
+  color: #111;
+  border: 1px solid #111;
+}
+
+.anime2 {
+  color: #fff;
+  background: linear-gradient(to right, transparent 50%, #b44201 50%);
+  background-size: 200% 100%;
+  transition: all 1s;
+  border: 1px solid #303030;
+
+  /* width: 15.3125rem;
+  height: 4rem;
+  text-transform: uppercase;
+  cursor: pointer; */
+}
+
+.anime2:hover {
+  background-position: -100% 0;
+  color: #090c1c;
+  border: 1px solid #303030;
+}
+/* bg-transparent text-white border border-[#303030] bg-[#090C1C] */
