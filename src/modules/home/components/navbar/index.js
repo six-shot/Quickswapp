@@ -121,16 +121,14 @@ function NavbarScroll({ isScrolling }) {
       variants={NavAnimations}
       className="fixed z-[999]  justify-between  bg-[#FFFFFF08] px-7 sm:py-2 py-1 rounded-[100px] ts-bg left-1/2 top-10"
     >
-      <ul className="flex items-center sm:space-x-8 space-x-6 text-white font-extrabold text-[15px] sm:text-xl">
+      <ul className="sm:flex hidden items-center sm:space-x-8 space-x-6 text-white font-extrabold text-[15px] sm:text-xl">
         <li>Blog</li>
         <li>Changelog</li>
         <li>Documentation</li>
-        <button className="sm:px-4 sm:py-2  text-white bg-[black] rounded-full text-[15px] sm:text-md ">
+        <button className="sm:px-4 sm:flex hidden sm:py-2  text-white bg-[black] rounded-full text-[15px] sm:text-md ">
           Launch App
         </button>
-        <button className="sm:px-4 sm:py-2  text-white bg-[black] rounded-full text-[15px] sm:text-md ">
-          Launch App
-        </button>
+
       </ul>
     </motion.nav>
   );

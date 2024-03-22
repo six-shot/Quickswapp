@@ -17,7 +17,7 @@ export default function LongVolatilty() {
       className="w-full  bg-[#090B18] relative z-10 sm:py-[2%] py-0"
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center sm:h-screen h-min sm:px-[4%] px-[6%]">
+        <div className="  relative z-10 grid md:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center sm:h-screen h-min sm:px-[4%] px-[6%]">
           <div className=" sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px]  bottom-0 left-0" />
           <div className=" flex sm:hidden bg-[#FF630B] z-10 absolute w-[273px] h-[273px] rounded-[400px] blur-[102px]  bottom-0 left-0" />
           <div className=" col-span-1 sm:mt-0 ">
@@ -75,7 +75,7 @@ export default function LongVolatilty() {
               />
             </motion.div>
           </div>
-          <div className="col-span-1 sm:order-last order-first">
+          <div className="col-span-1 md:order-last order-first">
             <motion.div
               variants={fadeIn("right", "tween", 0.2, 1)}
               className="flex  flex-col items-start text-[#FAFAFACC] flex-1 gap-4"
@@ -84,19 +84,20 @@ export default function LongVolatilty() {
                 <TypingText title="Liquidity Provisioning" />
               </div>
               <h2 className="sm:text-[48px] text-2xl font-extrabold leading-[1.1]">
-                Earn by Providing <br className="sm:flex hidden" /> Liquidity
+                Earn by Providing <br className="md:flex hidden" />
+                Liquidity
               </h2>
 
               <p className="sm:text-lg text-base">
                 Earn a higher yield by providing liquidity through GammaSwap.
-                <br className="sm:flex hidden" />
+                <br className="md:flex hidden" />
                 Think of our wrapped pools like wrapped tokens.
               </p>
               <p className="sm:text-lg text-base mt-6 mb-3">
                 The GammaSwap protocol will directly deposit liquidity into{" "}
-                <br className="sm:flex hidden" />
+                <br className="md:flex hidden" />
                 the underlying AMM and provide an LP token to the depositor
-                <br className="sm:flex hidden" />
+                <br className="md:flex hidden" />
                 representing the position.
               </p>
               <Button variant="secondary">Learn More </Button>

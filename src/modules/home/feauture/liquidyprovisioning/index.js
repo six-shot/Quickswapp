@@ -14,10 +14,10 @@ export default function LiquidityProvisioning() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full mt-[1.5%] bg-[#090B18] relative z-10 sm:py-[2%] py-0"
+      className="w-full mt-[1.5%] bg-[#090B18] relative z-10 sm:pt-[10%] py-0"
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center   sm:h-screen h-min sm:px-[4%] px-[6%]">
+        <div className="  relative z-10 grid lg:grid-cols-2 grid-cols-1 space-y-32 md:space-y-0  items-center justify-center   lg:h-screen h-min md:px-[4%] px-[6%]">
           <div className="col-span-1">
             <motion.div
               variants={fadeIn("left", "tween", 0.2, 1)}
@@ -27,19 +27,19 @@ export default function LiquidityProvisioning() {
                 <TypingText title="Liquidity Provisioning" />
               </div>
               <h2 className="sm:text-[48px] text-2xl font-extrabold leading-[1.1]">
-                Earn by Providing <br className="sm:flex hidden" /> Liquidity
+                Earn by Providing <br className="md:flex hidden" /> Liquidity
               </h2>
 
               <p className="sm:text-lg text-base">
                 Earn a higher yield by providing liquidity through GammaSwap.
-                <br className="sm:flex hidden" />
+                <br className="md:flex hidden" />
                 Think of our wrapped pools like wrapped tokens.
               </p>
-              <p className="sm:text-lg text-base mt-6 mb-3">
+              <p className="md:text-lg text-base mt-6 mb-3">
                 The GammaSwap protocol will directly deposit liquidity into{" "}
-                <br className="sm:flex hidden" />
+                <br className="md:flex hidden" />
                 the underlying AMM and provide an LP token to the depositor
-                <br className="sm:flex hidden" />
+                <br className="md:flex hidden" />
                 representing the position.
               </p>
               <Button variant="secondary">Learn More </Button>
