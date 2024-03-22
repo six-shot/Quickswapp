@@ -57,7 +57,7 @@ export default function Hero() {
           </motion.p>
           <motion.div
             variants={fadeIn("up", "tween", 1, 1)}
-            className="flex sm:justify-center justify-between  sm:space-x-12 px-[4%]"
+            className="flex sm:justify-center justify-between  sm:space-x-12 px-[10%]"
           >
             <Button variant={`anime`}>Launch App</Button>
             <Button variant="outline-primary">Learn More</Button>

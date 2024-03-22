@@ -37,10 +37,10 @@ export const Button = ({
       onClick={onClick}
       className={`
           ${getVariant(variant)}  transition duration-75   ${
-        !paddingLess && 'px-6 py-3'
+        !paddingLess && 'sm:px-6 px-4 sm:py-3 py-1'
       }  ${!square && 'rounded-md '} active:scale-95 ${className}  ${
         !iconPresent && 'flex justify-center items-center'
-      } gap-[10px]   text-xl font-bold`}
+      } gap-[10px]   sm:text-xl text-base font-bold`}
     >
       {imgSrc && (
         <div className='relative sm:w-[20px] w-[10px] sm:h-[20px] h-[10px]'>
