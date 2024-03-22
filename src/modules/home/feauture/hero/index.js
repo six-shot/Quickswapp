@@ -40,7 +40,7 @@ export default function Hero() {
           className="sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px] right-0 bottom-0"
         />
         <div className=" sm:hidden block bg-[#FF630B] z-10 absolute w-[133px] h-[133px] rounded-[400px] blur-[49px]  bottom-[10%]" />
-        <div className="mt-[8%] sm:px-0 px-[4%]">
+        <div className="mt-[8%] sm:px-0 px-[6%]">
           <motion.h1
             variants={fadeIn("down", "tween", 0.8, 1)}
             className="text-center text-[#FAFAFA] font-extrabold text-2xl sm:text-[64px] leading-[1.3]"

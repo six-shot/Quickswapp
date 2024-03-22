@@ -81,10 +81,10 @@ export default function Navbar() {
 
 function NavbarFixed() {
   return (
-    <header className=" h-[12vh] flex items-center ">
-      <div className="w-full fixed z-10   bg-[#010415]">
+    <header className=" h-[12vh] bg-[#010415] flex items-center ">
+      <div className="w-full fixed z-10   ">
         <div className="max-w-[1440px] mx-auto">
-          <nav className=" px-[4%] ">
+          <nav className=" sm:px-[4%] px-[6%] ">
             <div className="w-full flex flex-row justify-between items-center">
               <Logo />
               <nav className="sm:flex hidden border border-[#303030] bg-[#FFFFFF08] px-7 py-4 rounded-[100px]">
