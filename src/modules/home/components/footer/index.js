@@ -37,10 +37,10 @@ export default function Footer() {
             <div className="">
               <div className="flex items-center space-x-[97px]">
                 <div>
-                  <h4 className="text-[28px] text-[#fff] font-bold mb-3">
+                  <h4 className="text-[26px] text-[#fff] font-bold mb-3">
                     Protocol
                   </h4>
-                  <ul className="text-[24px] text-[#808080] font-medium">
+                  <ul className="text-[20px] text-[#808080] font-medium">
                     <li>Blog</li>
                     <li>Changelog</li>
                     <li>Github</li>
@@ -48,10 +48,10 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-[28px] text-[#fff] font-bold mb-3">
+                  <h4 className="text-[26px] text-[#fff] font-bold mb-3">
                     Protocol
                   </h4>
-                  <ul className="text-[24px] text-[#808080] font-medium">
+                  <ul className="text-[20px] text-[#808080] font-medium">
                     <li>Blog</li>
                     <li>Changelog</li>
                     <li>Github</li>
@@ -61,12 +61,12 @@ export default function Footer() {
               </div>
             </div>
             <div className="sm:hidden flex flex-col  mt-10">
-              <h4 className="text-[34px] text-[#fff] font-bold">Community</h4>
-              <div className="flex items-center space-x-12 mt-6">
-                <img className="w-[34px]" src={twitter} alt="twitter" />
-                <img className="w-[34px]" src={medium} alt="medium" />{" "}
-                <img className="w-[34px]" src={telegram} alt="telegram" />{" "}
-                <img className="w-[34px]" src={discord} alt="discord" />
+              <h4 className="text-[30px] text-[#fff] font-bold">Community</h4>
+              <div className="flex items-center sm:space-x-12 space-x-4 mt-6">
+                <img className="sm:w-[34px] w-[30px]" src={twitter} alt="twitter" />
+                <img className="sm:w-[34px] w-[30px]" src={medium} alt="medium" />{" "}
+                <img className="sm:w-[34px] w-[30px]" src={telegram} alt="telegram" />{" "}
+                <img className="sm:w-[34px] w-[30px]" src={discord} alt="discord" />
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      
+
     </motion.footer>
   );
 }

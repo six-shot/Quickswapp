@@ -14,7 +14,7 @@ export default function EarnLiquidity() {
       className="bg-[#090B18]  h-screen     relative z-10 sm:py-[2%] py-0"
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid sm:grid-cols-2 h-full grid-cols-1 w-full  space-y-20 items-center sm:pl-[4%] pl-0 sm:px-0 px-[6%]">
+        <div className="grid sm:grid-cols-2 h-full grid-cols-1 w-full  space-y-20 items-center sm:px-[4%] px-[6%]">
           <div className="col-span-1 w-full ">
             <motion.div
               variants={fadeIn("left", "tween", 0.2, 1)}
