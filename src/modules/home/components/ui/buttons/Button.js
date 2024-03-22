@@ -37,7 +37,7 @@ export const Button = ({
       onClick={onClick}
       className={`
           ${getVariant(variant)}  transition duration-75   ${
-        !paddingLess && 'sm:px-6 px-4 sm:py-3 py-1'
+        !paddingLess && 'sm:px-6 px-4 sm:py-3 py-2'
       }  ${!square && 'rounded-md '} active:scale-95 ${className}  ${
         !iconPresent && 'flex justify-center items-center'
       } gap-[10px]   sm:text-xl text-base font-bold`}
