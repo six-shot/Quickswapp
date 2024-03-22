@@ -43,8 +43,8 @@ export default function EarnLiquidity() {
               <Button variant="secondary">Learn More </Button>
             </motion.div>
           </div>
-          <div className=" col-span-1 sm:mt-0 w-full">
-            <motion.div className="flex jutify-center items-center  ">
+          <div className=" col-span-1  sm:mt-0 w-full">
+            <motion.div className="flex justify-center items-center  ">
               <motion.img className="rotate" src={earn} alt="dollar" />
             </motion.div>
           </div>
