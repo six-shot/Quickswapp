@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[150px] rounded-[400px] blur-[150px] -left-[10%] bottom-[10%]" />
       <div className="sm:hidden block bg-[#FF630B] z-10 absolute w-[133px] h-[130px] rounded-[400px] blur-[75px] -left-[10%] bottom-[10%]" />
       <div className="max-w-[1440px] mx-auto ">
-        <div className="px-[4%]  ">
+        <div className="sm:px-[4%] px-[6%]  ">
           <div className="py-16 border-t-[1px] border-[#5C5959] flex sm:flex-row flex-col justify-between items-start  ">
             <div className="">
               <Logo />

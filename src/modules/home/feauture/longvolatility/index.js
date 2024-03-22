@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { TypingText } from "../../utils/customtext";
-import { staggerContainer, fadeIn } from "../../utils/motion";
+import { staggerContainer, fadeIn, planetVariants } from "../../utils/motion";
 import rocket from "../../assets/3dicons.png";
 import dollar from "../../assets/dollar.png";
 import coins from "../../assets/coins.png";
@@ -21,11 +21,9 @@ export default function LongVolatilty() {
           <div className=" sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px]  bottom-0 left-0" />
           <div className=" flex sm:hidden bg-[#FF630B] z-10 absolute w-[273px] h-[273px] rounded-[400px] blur-[102px]  bottom-0 left-0" />
           <div className=" col-span-1 sm:mt-0 ">
+            <motion.div></motion.div>
             <motion.div
-
-            ></motion.div>
-            <motion.div
-              variants={fadeIn("left", "tween", 0.2, 1)}
+              variants={planetVariants("left")}
               className="relative "
             >
               <motion.img
