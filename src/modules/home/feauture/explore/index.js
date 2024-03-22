@@ -5,7 +5,7 @@ import explore from "../../assets/explore.png";
 
 export default function Explore() {
   return (
-    <div className="bg-[#090B18]   pb-[3%]  z-10 relative">
+    <div className="bg-[#090B18]  pt-[2%] pb-[3%]  z-10 relative">
       <div className="max-w-[1440px] mx-auto">
         <div className="sm:px-[4%] px-[6%]">
           <div className=" relative flex sm:flex-row flex-col justify-between gap-8 items-center  bg rounded-[20px] sm:h-[50vh] pt-[18%] sm:pt-0  px-[4%] ">

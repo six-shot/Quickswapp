@@ -94,15 +94,15 @@ function NavbarFixed() {
                   <li>Documentation</li>
                 </ul>
               </nav>
-              <div className="sm:flex hidden">
+              <div className="">
                 <Button variant={"anime"}>Launch App</Button>
               </div>
 
-              <div className="sm:hidden flex">
+              {/* <div className="sm:hidden flex">
                 <IconContext.Provider value={{ color: "white", size: "30px" }}>
                   <HiOutlineMenu />
                 </IconContext.Provider>
-              </div>
+              </div> */}
             </div>
           </nav>
         </div>
