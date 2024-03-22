@@ -125,11 +125,11 @@ function NavbarScroll({ isScrolling }) {
         <li>Blog</li>
         <li>Changelog</li>
         <li>Documentation</li>
-        <button className="sm:flex hidden px-4 sm:py-2  text-white bg-[black] rounded-full text-[15px] sm:text-md ">
+        <button className="sm:px-4 sm:py-2  text-white bg-[black] rounded-full text-[15px] sm:text-md ">
           Launch App
         </button>
-        <button className="sm:hidden flex px-5 py-2.5 text-white bg-[black] rounded-full text-[15px] sm:text-md ">
-          Launch
+        <button className="sm:px-4 sm:py-2  text-white bg-[black] rounded-full text-[15px] sm:text-md ">
+          Launch App
         </button>
       </ul>
     </motion.nav>
