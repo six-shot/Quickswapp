@@ -3,8 +3,13 @@ import bg from "../../assets/hero.png";
 import { Button } from "../../components/ui/buttons/Button";
 import AddLiquidity from "../../components/ui/tabs/addliquidity/AddLiquidity";
 import { motion } from "framer-motion";
-import { staggerContainer, fadeIn, slideIn, navVariants } from "../../utils/motion";
-import { TypingText } from "../../utils/customtext";
+import {
+  staggerContainer,
+  fadeIn,
+  slideIn,
+  navVariants,
+} from "../../utils/motion";
+import star from "../../assets/icons/Star 1.png"
 export default function Hero() {
   return (
     <motion.div
@@ -58,12 +63,18 @@ export default function Hero() {
             <Button variant="outline-primary">Learn More</Button>
           </motion.div>
           <motion.div className="px-[2.5%]">
-            <motion.div
-              variants={fadeIn("down", "tween", 0.8, 1)}
-              className="bg-[#131625] relative z-[2] rounded-2xl h-[500px] mt-[8%]  px-[5%] py-[4%]"
-            >
-              <AddLiquidity />
-            </motion.div>
+            <div>
+              <motion.div
+                variants={fadeIn("down", "tween", 0.8, 1)}
+                className=" card bg-[#131625] relative z-[2] rounded-2xl h-[500px] mt-[8%]  px-[5%] py-[4%]"
+              >
+                <AddLiquidity />
+                <span class="top"></span>
+                <span class="right"></span>
+                <span class="bottom"></span>
+                <span class="left"></span>
+              </motion.div>
+            </div>
           </motion.div>
           <div>
             <div className="flex sm:hidden w-[133px] h-[133px] "></div>
@@ -71,6 +82,18 @@ export default function Hero() {
         </div>
       </div>
       <div className="sm:block hidden absolute bottom-0 left-0 bg-[#010415] w-full h-[80px]"></div>
+      <div className="absolute bottom-[25%] left-[20%] -rotate-[30deg]">
+        <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 hithere">
+          <img src={star} alt="star" />
+          <h6 className="   text-[#B44201] font-bold">33.3%</h6>
+        </div>
+      </div>
+      <div className="absolute bottom-[10%] left-[20%] -rotate-[30deg]">
+        <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 hithere">
+          <img src={star} alt="star" />
+          <h6 className="   text-[#B44201] font-bold">48.8%</h6>
+        </div>
+      </div>
     </motion.div>
   );
 }
