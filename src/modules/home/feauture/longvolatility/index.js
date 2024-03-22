@@ -18,8 +18,8 @@ export default function LongVolatilty() {
     >
       <div className="max-w-[1440px] mx-auto">
         <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center sm:h-screen h-min px-[4%]">
-          <div className="  bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px]  bottom-0 left-0" />
-
+          <div className=" sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px]  bottom-0 left-0" />
+          <div className=" flex sm:hidden bg-[#FF630B] z-10 absolute w-[273px] h-[273px] rounded-[400px] blur-[102px]  bottom-0 left-0" />
           <div className=" col-span-1 sm:mt-0 ">
             <motion.div
               style={{ position: "absolute", top: "-15%", left: "5%" }}

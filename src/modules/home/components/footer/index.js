@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="py-16 border-t-[1px] border-[#5C5959] flex sm:flex-row flex-col justify-between items-start  ">
             <div className="">
               <Logo />
-              <h5 className="mt-6 text-[#808080] text-lg font-bold">
+              <h5 className="sm:mt-6 sm:my-0 my-10 text-[#808080] sm:text-lg text-base font-bold">
                 Oracle Free Perpetual Volatility Trading
               </h5>
 
@@ -38,10 +38,10 @@ export default function Footer() {
             <div className="">
               <div className="flex items-center space-x-[97px]">
                 <div>
-                  <h4 className="text-[26px] text-[#fff] font-bold mb-3">
+                  <h4 className="sm:text-[26px] text-[22px] text-[#fff] font-bold mb-3">
                     Protocol
                   </h4>
-                  <ul className="text-[20px] text-[#808080] font-medium">
+                  <ul className="sm:text-[20px]  text-base text-[#808080] font-medium">
                     <li>Blog</li>
                     <li>Changelog</li>
                     <li>Github</li>
@@ -49,10 +49,10 @@ export default function Footer() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="text-[26px] text-[#fff] font-bold mb-3">
+                  <h4 className="sm:text-[26px] text-[22px] text-[#fff] font-bold mb-3">
                     Protocol
                   </h4>
-                  <ul className="text-[20px] text-[#808080] font-medium">
+                  <ul className="sm:text-[20px]  text-base text-[#808080] font-medium">
                     <li>Blog</li>
                     <li>Changelog</li>
                     <li>Github</li>
@@ -61,9 +61,9 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="sm:hidden flex flex-col  mt-10">
-              <h4 className="text-[30px] text-[#fff] font-bold">Community</h4>
-              <div className="flex items-center sm:space-x-12 space-x-4 mt-6">
+            <div className="sm:hidden flex flex-col justify-center w-full  mt-10">
+              <h4 className="sm:text-[30px] text-[26px] text-center text-[#fff] font-bold">Community</h4>
+              <div className="flex justify-center items-center sm:space-x-12 space-x-4 mt-6">
                 <img
                   className="sm:w-[34px] w-[30px]"
                   src={twitter}
@@ -87,7 +87,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex justify-end">
+          <div className="flex sm:pb-[5%] pb-[26%] justify-center sm:justify-end">
             <h5 className="text-[#808080] text-lg font-bold">
               © 2023 GammaSwap Labs LLC.
             </h5>
