@@ -45,8 +45,8 @@ export default function LiquidityProvisioning() {
               <Button variant="secondary">Learn More </Button>
             </motion.div>
           </div>
-          <div className="col-span-1">
-            <motion.div className="relative">
+          <div className=" col-span-1 sm:mt-0 mt-[70%]">
+            <motion.div className="relative sm:h-full h-screen ">
               <motion.img
                 animate={{
                   y: "-20%",
