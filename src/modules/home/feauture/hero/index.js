@@ -57,7 +57,7 @@ export default function Hero() {
           </motion.p>
           <motion.div
             variants={fadeIn("up", "tween", 1, 1)}
-            className="flex sm:justify-center justify-between  sm:space-x-12 px-[2%]"
+            className="flex sm:justify-center justify-between  sm:space-x-12 px-[4%]"
           >
             <Button variant={`anime`}>Launch App</Button>
             <Button variant="outline-primary">Learn More</Button>
@@ -76,22 +76,40 @@ export default function Hero() {
               </motion.div>
             </div>
           </motion.div>
+
+          <div className="flex justify-between mt-[5%]">
+
+            <div className="-rotate-[30deg]">
+              <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 ">
+                <img src={star} alt="star" />
+                <h6 className="   text-[#B44201] font-bold">48.8%</h6>
+              </div>
+            </div>
+            <div className="-rotate-[30deg]">
+              <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 ">
+                <img src={star} alt="star" />
+                <h6 className="   text-[#B44201] font-bold">48.8%</h6>
+              </div>
+            </div>
+          </div>
           <div>
-            <div className="flex sm:hidden w-[133px] h-[133px] "></div>
+            <div className="flex sm:hidden w-[133px] h-[100px] "></div>
           </div>
         </div>
       </div>
       <div className="sm:block hidden absolute bottom-0 left-0 bg-[#010415] w-full h-[80px]"></div>
-      <div className="absolute bottom-[25%] left-[20%] -rotate-[30deg]">
-        <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 hithere">
-          <img src={star} alt="star" />
-          <h6 className="   text-[#B44201] font-bold">33.3%</h6>
+      <div className="sm:flex hidden">
+        <div className="absolute bottom-[25%] left-[20%] -rotate-[30deg]">
+          <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 hithere">
+            <img src={star} alt="star" />
+            <h6 className="   text-[#B44201] font-bold">33.3%</h6>
+          </div>
         </div>
-      </div>
-      <div className="absolute bottom-[10%] left-[20%] -rotate-[30deg]">
-        <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 hithere">
-          <img src={star} alt="star" />
-          <h6 className="   text-[#B44201] font-bold">48.8%</h6>
+        <div className="absolute bottom-[10%] left-[20%] -rotate-[30deg]">
+          <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 hithere">
+            <img src={star} alt="star" />
+            <h6 className="   text-[#B44201] font-bold">48.8%</h6>
+          </div>
         </div>
       </div>
     </motion.div>
