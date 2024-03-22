@@ -2,8 +2,9 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { TypingText } from "../../utils/customtext";
-import { staggerContainer,fadeIn } from "../../utils/motion";
-import dollar from "../../assets/dollar.png";
+import { staggerContainer, fadeIn } from "../../utils/motion";
+import dollar from "../../assets/liquidity.png";
+import eth from "../../assets/eth.png";
 
 export default function LiquidityProvisioning() {
   return (
@@ -12,7 +13,7 @@ export default function LiquidityProvisioning() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full mt-[1.5%] bg-[#090B18] relative z-10 "
+      className="w-full mt-[1.5%] bg-[#090B18] relative z-10 py-[10%]"
     >
       <div className="max-w-[1440px] mx-auto">
         <div className="  relative z-10 grid grid-cols-2 items-center justify-center  py-14 h-screen px-[4%]">
@@ -43,17 +44,32 @@ export default function LiquidityProvisioning() {
             </motion.div>
           </div>
           <div className="col-span-1">
-            <motion.div
-              animate={{
-                y: "-20%",
-              }}
-              transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "mirror",
-              }}
-            >
-              <img src={dollar} alt="dollar" />
+            <motion.div className="relative">
+              <motion.img
+                animate={{
+                  y: "-20%",
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                }}
+                src={dollar}
+                alt="dollar"
+              />
+              <motion.img
+                animate={{
+                  y: "-20%",
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                }}
+                src={eth}
+                alt="eth"
+                className="absolute -top-[25%] right-[20%]"
+              />
             </motion.div>
           </div>
         </div>

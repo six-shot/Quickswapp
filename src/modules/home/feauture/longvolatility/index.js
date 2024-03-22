@@ -9,6 +9,7 @@ export default function LongVolatilty() {
   return (
     <div className="bg-[#090B18] h-screen flex justify-center items-center relative z-10 overflow-hidden">
       <div className="max-w-[1440px] mx-auto w-full">
+        <div className="  bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px]  bottom-0 left-0" />
         <div className="grid md:grid-cols-2 items-center  px-[4%] py-6 md:py-14 w-full">
           <div className="relative col-span-1 ">
             <motion.div
