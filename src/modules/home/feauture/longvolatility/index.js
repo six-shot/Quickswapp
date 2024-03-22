@@ -14,10 +14,10 @@ export default function LongVolatilty() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full  bg-[#090B18] relative z-10 py-[10%]"
+      className="w-full  bg-[#090B18] relative z-10 "
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center  py-14 sm:h-screen h-min px-[4%]">
+        <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center sm:h-screen h-min px-[4%]">
           <div className="col-span-1">
             <motion.div
               variants={fadeIn("left", "tween", 0.2, 1)}

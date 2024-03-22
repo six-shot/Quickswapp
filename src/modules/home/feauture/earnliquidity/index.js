@@ -14,7 +14,7 @@ export default function EarnLiquidity() {
       className="bg-[#090B18]  h-screen     relative z-10"
     >
       <div className="max-w-[1440px] mx-auto">
-        <div className="grid sm:grid-cols-2 h-full grid-cols-1 w-full items-center pl-[4%] py-14">
+        <div className="grid sm:grid-cols-2 h-full grid-cols-1 w-full  space-y-20 items-center sm:pl-[4%] pl-0 sm:px-0 px-[6%]">
           <div className="col-span-1 w-full ">
             <motion.div
               variants={fadeIn("left", "tween", 0.2, 1)}
@@ -42,24 +42,13 @@ export default function EarnLiquidity() {
             </motion.div>
           </div>
           <div className="col-span-1 w-full">
-            <div
-              style={{
-                background: `url(${bg})`,
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                width: "100%",
-                height: "100vh",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-              }}
-            >
-              <motion.div variants={planetVariants("right")} className="">
-                <img src={earn} className="rotate" alt="earn" />
-              </motion.div>
-            </div>
+            <motion.div className="relative  ">
+              <motion.img
+               className="rotate"
+                src={earn}
+                alt="dollar"
+             />
+            </motion.div>
           </div>
         </div>
       </div>
