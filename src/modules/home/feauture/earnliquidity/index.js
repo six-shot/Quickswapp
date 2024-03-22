@@ -43,7 +43,21 @@ export default function EarnLiquidity() {
               <Button variant="secondary">Learn More </Button>
             </motion.div>
           </div>
-          <div className=" col-span-1  sm:mt-0 w-full">
+          <div
+            style={{
+              background: `url(${bg})`,
+              backgroundPosition: "center",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              width: "100%",
+              height: "",
+              display: "flex",
+              alignItems: "center",
+
+              flexDirection: "column",
+            }}
+            className=" col-span-1  sm:mt-0 w-full"
+          >
             <motion.div className="flex justify-center items-center  ">
               <motion.img className="rotate" src={earn} alt="dollar" />
             </motion.div>
