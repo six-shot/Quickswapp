@@ -21,7 +21,7 @@ export default function EarnLiquidity() {
               className="flex  flex-col text-[#FAFAFACC] flex-1 gap-4"
             >
               <div className=" text-2xl ">
-                <TypingText title="Liquidity Provisioning" />
+                <TypingText title="Multiple AMMs" />
               </div>
               <h2 className="text-[48px] font-extrabold leading-[1.1]">
                 Earn by Providing <br /> Liquidity

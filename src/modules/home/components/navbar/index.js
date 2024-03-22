@@ -81,8 +81,8 @@ export default function Navbar() {
 
 function NavbarFixed() {
   return (
-    <header className=" w-full fixed z-10 py-[0.6%]  bg-[#010415]">
-      <div className="">
+    <header className=" h-[12vh] flex items-center ">
+      <div className="w-full fixed z-10   bg-[#010415]">
         <div className="max-w-[1440px] mx-auto">
           <nav className=" px-[4%] ">
             <div className="w-full flex flex-row justify-between items-center">
@@ -96,16 +96,12 @@ function NavbarFixed() {
               </nav>
               <div className="sm:flex hidden">
                 <Button variant={"anime"}>Launch App</Button>
-
               </div>
 
               <div className="sm:hidden flex">
-
                 <IconContext.Provider value={{ color: "white", size: "30px" }}>
-                 <HiOutlineMenu />
-
+                  <HiOutlineMenu />
                 </IconContext.Provider>
-
               </div>
             </div>
           </nav>
@@ -123,7 +119,7 @@ function NavbarScroll({ isScrolling }) {
       animate={isScrolling ? "animate" : "initial"}
       exit="exit"
       variants={NavAnimations}
-      className="fixed z-[999] flex justify-between  bg-[#FFFFFF08] px-7 py-2 rounded-[100px] ts-bg left-1/2 top-10"
+      className="fixed hidden z-[999] sm:flex justify-between  bg-[#FFFFFF08] px-7 py-2 rounded-[100px] ts-bg left-1/2 top-10"
     >
       <ul className="flex items-center space-x-8 text-white font-extrabold text-xl">
         <li>Blog</li>

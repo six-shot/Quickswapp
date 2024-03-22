@@ -40,7 +40,7 @@ export default function Hero() {
           className="sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px] right-0 bottom-0"
         />
         <div className=" sm:hidden block bg-[#FF630B] z-10 absolute w-[133px] h-[133px] rounded-[400px] blur-[49px]  bottom-[10%]" />
-        <div className="mt-[10%] sm:px-0 px-[4%]">
+        <div className="mt-[8%] sm:px-0 px-[4%]">
           <motion.h1
             variants={fadeIn("down", "tween", 0.8, 1)}
             className="text-center text-[#FAFAFA] font-extrabold text-2xl sm:text-[64px] leading-[1.3]"
@@ -69,10 +69,10 @@ export default function Hero() {
                 className=" card bg-[#131625] relative z-[2] rounded-2xl h-[500px] mt-[8%]  px-[5%] py-[4%]"
               >
                 <AddLiquidity />
-                <span class="top"></span>
-                <span class="right"></span>
-                <span class="bottom"></span>
-                <span class="left"></span>
+                <span class="span top"></span>
+                <span class="span right"></span>
+                <span class="span bottom"></span>
+                <span class="span left"></span>
               </motion.div>
             </div>
           </motion.div>

@@ -4,13 +4,20 @@ import { motion } from "framer-motion";
 import rocket from "../../assets/3dicons.png";
 import dollar from "../../assets/dollar.png";
 import coins from "../../assets/coins.png";
+import { staggerContainer, fadeIn } from "../../utils/motion";
 
 export default function LongVolatilty() {
   return (
-    <div className="bg-[#090B18] h-screen flex justify-center items-center relative z-10 overflow-hidden">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+      className="bg-[#090B18] h-screen flex justify-center items-center relative z-10 overflow-hidden"
+    >
       <div className="max-w-[1440px] mx-auto w-full">
         <div className="  bg-[#FF630B] z-10 absolute w-[400px] h-[400px] rounded-[400px] blur-[150px]  bottom-0 left-0" />
-        <div className="grid md:grid-cols-2 items-center  px-[4%] py-6 md:py-14 w-full">
+        <div className="grid sm:grid-cols-2 grid-cols-1 items-center  px-[4%]  w-full">
           <div className="relative col-span-1 ">
             <motion.div
               style={{ position: "absolute", top: "-15%", left: "5%" }}
@@ -67,29 +74,33 @@ export default function LongVolatilty() {
             </motion.div>
           </div>
           <div className="col-span-1">
-            <div className="flex flex-col text-[#FAFAFACC]">
+            <motion.div
+              variants={fadeIn("right", "tween", 0.2, 1)}
+              className="flex flex-col text-[#FAFAFACC]"
+            >
               <div className=" text-2xl ">
-                <TypingText title="Liquidity Provisioning" />
+                <TypingText title="Perpetuals" />
               </div>
               <h2 className="text-[48px] font-extrabold leading-[1.1]">
-                Earn by Providing <br /> Liquidity
+                Long Volatility
               </h2>
               <p className="text-lg">
-                Earn a higher yield by providing liquidity through GammaSwap.
+                Turn Impermanent Loss into Impermanent Gain. Get perpetaul
                 <br />
-                Think of our wrapped pools like wrapped tokens.
+                volatility exposure on any asset in the form of a long, short or
+                <br />
+                straddle. Unlike perpetual futures, liquidations are time
+                <br />
+                dependent - protecting traders from unexpected price movements.
               </p>
               <p className="text-lg mt-6">
-                The GammaSwap protocol will directly deposit liquidity into{" "}
-                <br /> the underlying AMM and provide an LP token to the
-                depositor
-                <br />
-                representing the position.
+                GammaSwap perpetuals are fully collateralized offering<br/>
+                non-linear returns that increase as price changes.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
