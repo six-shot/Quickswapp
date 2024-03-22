@@ -46,7 +46,7 @@ export default function EarnLiquidity() {
           <div className=" col-span-1 sm:mt-0 w-full">
             <motion.div className="flex jutify-center items-center  ">
               <motion.img
-
+className="rotate"
                 src={earn}
                 alt="dollar"
               />
