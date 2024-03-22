@@ -62,7 +62,7 @@ export default function Hero() {
             <Button variant={`anime`}>Launch App</Button>
             <Button variant="outline-primary">Learn More</Button>
           </motion.div>
-          <motion.div className="px-[2.5%]">
+          <motion.div className="sm:px-[2.5%]">
             <div>
               <motion.div
                 variants={fadeIn("down", "tween", 0.8, 1)}
