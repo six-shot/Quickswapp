@@ -14,7 +14,7 @@ export default function LongVolatilty() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full  bg-[#090B18] relative z-10 "
+      className="w-full  bg-[#090B18] relative z-10 sm:py-[2%] py-0"
     >
       <div className="max-w-[1440px] mx-auto">
         <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center sm:h-screen h-min px-[4%]">
