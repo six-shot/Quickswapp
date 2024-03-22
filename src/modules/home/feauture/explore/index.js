@@ -5,7 +5,7 @@ import dollar from "../../assets/liquidity.png";
 import eth from "../../assets/eth.png";
 export default function Explore() {
   return (
-    <div className="bg-[#090B18] pt-[10%]  pb-[3%]  z-10 relative">
+    <div className="bg-[#090B18]   pb-[3%]  z-10 relative">
       <div className="max-w-[1440px] mx-auto">
         <div className="sm:px-[4%] px-[6%]">
           <div className=" relative flex sm:flex-row flex-col gap-20 items-center  bg rounded-[20px] sm:pt-0 pt-[18%] sm:py-[3%] px-[4%] ">
