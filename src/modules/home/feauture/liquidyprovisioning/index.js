@@ -16,8 +16,8 @@ export default function LiquidityProvisioning() {
       viewport={{ once: false, amount: 0.25 }}
       className="w-full mt-[1.5%] bg-[#090B18] relative z-10 py-[10%]"
     >
-      <div className="max-w-[1440px] sm:h-full h-screen mx-auto">
-        <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1  items-center justify-center  py-14 h-screen px-[4%]">
+      <div className="max-w-[1440px] mx-auto">
+        <div className="  relative z-10 grid sm:grid-cols-2 grid-cols-1 space-y-32  items-center justify-center  py-14 sm:h-screen h-min px-[4%]">
           <div className="col-span-1">
             <motion.div
               variants={fadeIn("left", "tween", 0.2, 1)}
@@ -45,17 +45,17 @@ export default function LiquidityProvisioning() {
               <Button variant="secondary">Learn More </Button>
             </motion.div>
           </div>
-          <div className=" col-span-1 sm:mt-0 mt-[70%]">
-            <motion.div className="relative sm:h-full h-screen ">
+          <div className=" col-span-1 sm:mt-0 ">
+            <motion.div className="relative  ">
               <motion.img
-                animate={{
-                  y: "-20%",
-                }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "mirror",
-                }}
+                // animate={{
+                //   y: "-20%",
+                // }}
+                // transition={{
+                //   duration: 2,
+                //   repeat: Infinity,
+                //   repeatType: "mirror",
+                // }}
                 src={dollar}
                 alt="dollar"
               />

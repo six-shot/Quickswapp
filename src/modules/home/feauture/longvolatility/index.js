@@ -73,7 +73,7 @@ export default function LongVolatilty() {
               />
             </motion.div>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-1 order-first sm:order-last ">
             <motion.div
               variants={fadeIn("right", "tween", 0.2, 1)}
               className="flex flex-col text-[#FAFAFACC]"
