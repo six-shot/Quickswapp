@@ -77,7 +77,7 @@ export default function Hero() {
             </div>
           </motion.div>
 
-          <div className="flex justify-between mt-[5%]">
+          <div className="sm:hidden flex justify-between mt-[5%]">
 
             <div className="-rotate-[30deg]">
               <div className="bg-[#2C1310] py-2 px-[14px] rounded flex items-center space-x-1 ">
