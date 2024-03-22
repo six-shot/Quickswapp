@@ -22,7 +22,7 @@ export default function EarnLiquidity() {
               className="flex  flex-col items-start text-[#FAFAFACC] flex-1 gap-4"
             >
               <div className=" text-2xl ">
-                <TypingText title="Liquidity Provisioning" />
+                <TypingText title="Multiple AMMs" />
               </div>
               <h2 className="sm:text-[48px] text-2xl font-extrabold leading-[1.1]">
                 Earn by Providing <br className="md:flex hidden" /> Liquidity
