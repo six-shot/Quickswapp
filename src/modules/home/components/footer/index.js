@@ -14,7 +14,8 @@ export default function Footer() {
       whileInView="show"
       className="bg-[#090B18] w-full relative pb-[7%]"
     >
-      <div className="sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[200px] rounded-[400px] blur-[150px] -left-[10%] bottom-[10%]" />
+      <div className="sm:block hidden bg-[#FF630B] z-10 absolute w-[400px] h-[150px] rounded-[400px] blur-[150px] -left-[10%] bottom-[10%]" />
+      <div className="sm:hidden block bg-[#FF630B] z-10 absolute w-[133px] h-[130px] rounded-[400px] blur-[75px] -left-[10%] bottom-[10%]" />
       <div className="max-w-[1440px] mx-auto ">
         <div className="px-[4%]  ">
           <div className="py-16 border-t-[1px] border-[#5C5959] flex sm:flex-row flex-col justify-between items-start  ">
@@ -63,10 +64,26 @@ export default function Footer() {
             <div className="sm:hidden flex flex-col  mt-10">
               <h4 className="text-[30px] text-[#fff] font-bold">Community</h4>
               <div className="flex items-center sm:space-x-12 space-x-4 mt-6">
-                <img className="sm:w-[34px] w-[30px]" src={twitter} alt="twitter" />
-                <img className="sm:w-[34px] w-[30px]" src={medium} alt="medium" />{" "}
-                <img className="sm:w-[34px] w-[30px]" src={telegram} alt="telegram" />{" "}
-                <img className="sm:w-[34px] w-[30px]" src={discord} alt="discord" />
+                <img
+                  className="sm:w-[34px] w-[30px]"
+                  src={twitter}
+                  alt="twitter"
+                />
+                <img
+                  className="sm:w-[34px] w-[30px]"
+                  src={medium}
+                  alt="medium"
+                />{" "}
+                <img
+                  className="sm:w-[34px] w-[30px]"
+                  src={telegram}
+                  alt="telegram"
+                />{" "}
+                <img
+                  className="sm:w-[34px] w-[30px]"
+                  src={discord}
+                  alt="discord"
+                />
               </div>
             </div>
           </div>
@@ -77,7 +94,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
     </motion.footer>
   );
 }
