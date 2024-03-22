@@ -22,17 +22,10 @@ export default function LongVolatilty() {
           <div className=" flex sm:hidden bg-[#FF630B] z-10 absolute w-[273px] h-[273px] rounded-[400px] blur-[102px]  bottom-0 left-0" />
           <div className=" col-span-1 sm:mt-0 ">
             <motion.div
-              style={{ position: "absolute", top: "-15%", left: "5%" }}
+
             ></motion.div>
             <motion.div
-              // animate={{
-              //   y: "-20%",
-              // }}
-              // transition={{
-              //   duration: 2,
-              //   repeat: Infinity,
-              //   repeatType: "mirror",
-              // }}
+              variants={fadeIn("left", "tween", 0.2, 1)}
               className="relative "
             >
               <motion.img
