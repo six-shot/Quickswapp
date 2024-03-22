@@ -9,7 +9,7 @@ import EarnLiquidity from "./feauture/earnliquidity";
 
 export default function Home() {
   return (
-    <div className="h-screen w-full ">
+    <div className="h-screen w-full sm:overflow-x-visible overflow-x-hidden  ">
       <NavFootLayout>
         <Hero />
         <LiquidityProvisioning/>
