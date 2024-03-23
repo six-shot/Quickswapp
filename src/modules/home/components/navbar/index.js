@@ -90,7 +90,7 @@ function NavbarFixed() {
           <nav className=" sm:px-[4%] px-[6%] ">
             <div className="w-full flex flex-row justify-between items-center">
               {/* <Logo /> */}
-              <img src={logo} className="sm:w-[173px] w-[120px]" alt="logo"/>
+              <img src={logo} className="sm:w-[173px] w-[140px]" alt="logo"/>
               <nav className="sm:flex hidden border border-[#303030] bg-[#FFFFFF08] px-7 py-4 rounded-[100px]">
                 <ul className="flex items-center space-x-8 text-white font-extrabold text-xl">
                   <li>Blog</li>
