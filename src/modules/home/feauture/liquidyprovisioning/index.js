@@ -14,7 +14,7 @@ export default function LiquidityProvisioning() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className="w-full mt-[1.5%] bg-[#090B18] relative z-10 sm:pt-[10%] py-0"
+      className="w-full mt-[1.5%] bg-[#090B18] relative z-10 sm:pt-[5%] py-0"
     >
       <div className="max-w-[1440px] mx-auto">
         <div className="  relative z-10 grid lg:grid-cols-2 grid-cols-1 space-y-32 md:space-y-0  items-center justify-center   lg:h-screen h-min md:px-[4%] px-[6%]">
@@ -71,7 +71,7 @@ export default function LiquidityProvisioning() {
                 }}
                 src={eth}
                 alt="eth"
-                className="absolute -top-[25%] right-[20%]"
+                className="w-[250px] absolute -top-[25%] right-[20%]"
               />
             </motion.div>
           </div>
