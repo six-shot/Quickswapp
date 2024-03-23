@@ -102,12 +102,15 @@ function NavbarFixed() {
                   <HiOutlineMenu />
                 </IconContext.Provider>
               </div> */}
+              <div className="sm:flex hidden">
+                <Button variant={"anime"}>Launch App</Button>
+              </div>
               <div
                 className="sm:hidden flex"
                 onClick={() => setToggle(!toggle)}
               >
                 {toggle ? (
-                  <IoClose className="text-white text-[25px]" />
+                  <IoClose className="text-white text-[30px]" />
                 ) : (
                   <HiOutlineMenu className="text-white text-[30px]" />
                 )}
