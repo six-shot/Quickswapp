@@ -24,7 +24,7 @@ export default function LongVolatilty() {
             <motion.div></motion.div>
             <motion.div variants={planetVariants("left")} className="relative ">
               <motion.div
-               
+
                 animate={{
                   x: [0, -10, 0], // Vertical vibrating animation
                   transition: {

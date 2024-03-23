@@ -45,7 +45,7 @@ export default function LiquidityProvisioning() {
               <Button variant="secondary">Learn More </Button>
             </motion.div>
           </div>
-          <div className=" col-span-1 sm:mt-0 ">
+          <div className=" col-span-1  sm:mt-0 ">
             <motion.div className="relative  ">
               <motion.img
                 animate={{
@@ -56,6 +56,7 @@ export default function LiquidityProvisioning() {
                   repeat: Infinity,
                   repeatType: "mirror",
                 }}
+                className="w-[500px]"
                 src={dollar}
                 alt="dollar"
               />
