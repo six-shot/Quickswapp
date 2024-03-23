@@ -46,9 +46,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "../ui/buttons/Button";
 import Logo from "../logo/Logo";
 import { NavAnimations } from "../../utils/motion";
-import { IconContext } from "react-icons";
+import { IoClose } from "react-icons/io5";
 
 export default function Navbar() {
+
   const [isScrolling, setIsScrolling] = useState(false);
 
   const handleScroll = () => {
@@ -80,6 +81,7 @@ export default function Navbar() {
 }
 
 function NavbarFixed() {
+  const [toggle, setToggle] = useState(false);
   return (
     <header className=" h-[12vh] bg-[#010415] flex items-center ">
       <div className="w-full fixed z-10   ">
@@ -94,15 +96,34 @@ function NavbarFixed() {
                   <li>Documentation</li>
                 </ul>
               </nav>
-              <div className="">
-                <Button variant={"anime"}>Launch App</Button>
-              </div>
 
               {/* <div className="sm:hidden flex">
                 <IconContext.Provider value={{ color: "white", size: "30px" }}>
                   <HiOutlineMenu />
                 </IconContext.Provider>
               </div> */}
+              <div
+                className="sm:hidden flex"
+                onClick={() => setToggle(!toggle)}
+              >
+                {toggle ? (
+                  <IoClose className="text-white text-[25px]" />
+                ) : (
+                  <HiOutlineMenu className="text-white text-[30px]" />
+                )}
+              </div>
+
+              <div
+                className={`${
+                  toggle ? "flex" : "hidden"
+                } p-6 bg-[#B44201] absolute top-10 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
+              >
+                <ul className="list-none flex flex-col text-white font-medium justify-end items-center flex-1">
+                  <li>Blog</li>
+                  <li>Changelog</li>
+                  <li>Documentation</li>
+                </ul>
+              </div>
             </div>
           </nav>
         </div>
