@@ -45,6 +45,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "../ui/buttons/Button";
 import Logo from "../logo/Logo";
+import logo from "../../assets/logo.png"
 import { NavAnimations } from "../../utils/motion";
 import { IoClose } from "react-icons/io5";
 
@@ -83,12 +84,13 @@ export default function Navbar() {
 function NavbarFixed() {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className=" h-[12vh] bg-[#010415] flex items-center ">
+    <header className=" sm:h-[12vh] h-[10vh] bg-[#010415] flex items-center ">
       <div className="w-full fixed z-10   ">
         <div className="max-w-[1440px] mx-auto">
           <nav className=" sm:px-[4%] px-[6%] ">
             <div className="w-full flex flex-row justify-between items-center">
-              <Logo />
+              {/* <Logo /> */}
+              <img src={logo} className="sm:w-[173px] w-[120px]" alt="logo"/>
               <nav className="sm:flex hidden border border-[#303030] bg-[#FFFFFF08] px-7 py-4 rounded-[100px]">
                 <ul className="flex items-center space-x-8 text-white font-extrabold text-xl">
                   <li>Blog</li>
