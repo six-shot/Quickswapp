@@ -121,9 +121,9 @@ function NavbarFixed() {
               <div
                 className={`${
                   toggle ? "flex" : "hidden"
-                } p-6 bg-[#B44201] absolute top-10 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar z-10`}
+                } p-6 bg-[#B44201] absolute top-10 right-0 mx-4 my-2 min-w-[170px] rounded-xl sidebar z-10`}
               >
-                <ul className="list-none flex flex-col text-white font-medium justify-end items-center flex-1">
+                <ul className="list-none flex flex-col text-white font-medium gap-4 justify-end items-center flex-1">
                   <li>Blog</li>
                   <li>Changelog</li>
                   <li>Documentation</li>
