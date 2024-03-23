@@ -22,23 +22,38 @@ export default function LongVolatilty() {
           <div className=" flex sm:hidden bg-[#FF630B] z-10 absolute w-[273px] h-[273px] rounded-[400px] blur-[102px]  bottom-0 left-0" />
           <div className=" col-span-1 sm:mt-0 ">
             <motion.div></motion.div>
-            <motion.div
-              variants={planetVariants("left")}
-              className="relative "
-            >
-              <motion.img
+            <motion.div variants={planetVariants("left")} className="relative ">
+              <motion.div
+               
                 animate={{
-                  y: "-20%",
+                  x: [0, -10, 0], // Vertical vibrating animation
+                  transition: {
+                    duration: 0.1,
+                    repeat: Infinity, // Repeat infinitely
+                    repeatType: "loop", // Loop back and forth
+                  },
                 }}
-                transition={{
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "mirror",
-                }}
-                src={rocket}
-                alt="dollar"
-                className="absolute -top-[30%] right-[10%]"
-              />
+              >
+                <motion.div
+                  animate={{
+                    y: [1000, 0, 0, -1000, -1000, 1000], // Vertical flying animation
+                    x: [-1000, 0, 0, 1000, 1000, -1000],
+                    opacity: [0, 1, 1, 1, 0, 0],
+                    transition: {
+                      duration: 12,
+                      repeat: Infinity, // Repeat infinitely
+                      repeatType: "loop", // Loop back and forth
+                    },
+                  }}
+                >
+                  <motion.img
+                    src={rocket}
+                    alt="dollar"
+                    className="absolute -top-[30%] right-[10%]"
+                  />
+                </motion.div>
+              </motion.div>
+
               <motion.img
                 animate={{
                   y: "-20%",
