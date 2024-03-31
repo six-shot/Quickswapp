@@ -26,6 +26,14 @@ export default function LongVolatilty() {
              
                 
                   <motion.img
+                   animate={{
+                  y: "-20%",
+                }}
+                transition={{
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "mirror",
+                }}
                     src={rocket}
                     alt="dollar"
                     className="absolute -top-[30%] right-[10%]"
