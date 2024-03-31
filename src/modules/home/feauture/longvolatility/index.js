@@ -23,36 +23,14 @@ export default function LongVolatilty() {
           <div className=" col-span-1 sm:mt-0 ">
             <motion.div></motion.div>
             <motion.div variants={planetVariants("left")} className="relative ">
-              <motion.div
-
-                animate={{
-                  x: [0, -10, 0], // Vertical vibrating animation
-                  transition: {
-                    duration: 0.1,
-                    repeat: Infinity, // Repeat infinitely
-                    repeatType: "loop", // Loop back and forth
-                  },
-                }}
-              >
-                <motion.div
-                  animate={{
-                    y: [1000, 0, 0, -1000, -1000, 1000], // Vertical flying animation
-                    x: [-1000, 0, 0, 1000, 1000, -1000],
-                    opacity: [0, 1, 1, 1, 0, 0],
-                    transition: {
-                      duration: 12,
-                      repeat: Infinity, // Repeat infinitely
-                      repeatType: "loop", // Loop back and forth
-                    },
-                  }}
-                >
+             
+                
                   <motion.img
                     src={rocket}
                     alt="dollar"
                     className="absolute -top-[30%] right-[10%]"
                   />
-                </motion.div>
-              </motion.div>
+                
 
               <motion.img
                 animate={{
